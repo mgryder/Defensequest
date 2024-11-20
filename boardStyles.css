@@ -17,3 +17,10 @@ td{
     border: 1px solid;
     border-color: black;
 }
+.wall{
+    background-color: darkgray;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
