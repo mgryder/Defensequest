@@ -24,3 +24,52 @@ td{
     border: 1px solid;
     border-color: black;
 }
+.princess{
+    background-color: pink;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
+.mage{
+    background-color: beige;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
+.rogue{
+    background-color: black;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
+.prince{
+    background-color: navy;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
+.knight{
+    background-color: red;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
+.king{
+    background-color: gold;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
+.barbarian{
+    background-color: yellow;
+    height: 55px;
+    width: 55px;
+    border: 1px solid;
+    border-color: black;
+}
