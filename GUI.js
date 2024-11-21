@@ -1,4 +1,5 @@
 var turn=1;
+var moon=1;
 const ids={
     princess: 0,
     barbarian1: 1,
@@ -43,6 +44,10 @@ const ids={
     dragon8: 40,
     dragon9: 41
 };
+const names=["Princess McGuffin", "Barbarian Bob", "Barbarian Billy", "King Noble", "Prince Epic", "Melvin the Mage", "Sir Fightsalot", 
+            "Rogue the Rogue", "Sir Killsalot", "Vampire", "Werewolf", "Spider 1", "Spider 2", "Spider 3", "Spider 4", "Spider 5", 
+            "Zombie 1", "Zombie 2", "Zombie 3", "Zombie 4", "Zombie 5", "Zombie 6", "Zombie 7", "Zombie 8", "Skeleton 1", "Skeleton 2", 
+            "Skeleton 3", "Skeleton 4", "Skeleton 5", "Skeleton 6", "Skeleton 7", "Skeleton 8", "Drew the Druid", "Dragon"];
 const board =[[42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42],
                 [42, 42, 42, 42, 42, 42, 42, null, null, 42, null, null, null, null, null, null, null, null, null, null, null, ids.skeleton4, ids.skeleton8, 42, 42, 42],
                 [42, 42, 42, 42, 42, 42, 42, null, null, 42, null, null, null, null, null, null, null, null, null, null, null, ids.skeleton3, ids.skeleton7, 42, 42, 42],
@@ -60,9 +65,16 @@ const board =[[42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 4
 function endTurn(){
     if(turn>32){
         turn=1;
+        if(moon>7){
+            moon=1;
+        }
+        else{
+            moon++;
+        }
     }
     else{
         turn++;
     }
-    document.getElementById("testCounter").innerHTML=turn;
+    document.getElementById("testCounter").innerHTML="Turn: "+names[turn];
+    document.getElementById("moon").innerHTML="Moon: "+moon;
 }
