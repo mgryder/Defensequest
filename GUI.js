@@ -1,5 +1,17 @@
 var turn=1;
 var moon=1;
+window.onload=init;
+function init(){
+    boardTable=document.getElementById("board");
+    //console.log(boardTable);
+    const boardTableRows=boardTable.getElementsByTagName("tr");
+    //console.log(boardTableRows);
+    var spaces=Array.from(boardTableRows[0].getElementsByTagName("td"));
+    for(x=1; x<13; x++){
+        spaces=spaces.concat(Array.from(boardTableRows[x].getElementsByTagName("td")));
+    }
+    //console.log(spaces);
+}
 const ids={
     princess: 0,
     barbarian1: 1,
