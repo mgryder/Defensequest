@@ -10,7 +10,9 @@ function init(){
     for(x=1; x<13; x++){
         spaces=spaces.concat(Array.from(boardTableRows[x].getElementsByTagName("td")));
     }
-    //console.log(spaces);
+    //console.log(spaces.length);
+    document.getElementById("testCounter").innerHTML="Turn: "+names[turn];
+    document.getElementById("moon").innerHTML="Moon: "+moon;
 }
 const ids={
     princess: 0,
